@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "group:allNonMajor"],
+  "rangeStrategy": "bump",
+  "git-submodules": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["git-refs"],
+      "minimumReleaseAge": "21 days"
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "osvVulnerabilityAlerts": true,
+  "schedule": ["on Wednesday"]
+}
