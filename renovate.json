@@ -8,10 +8,12 @@
   },
   "packageRules": [
     {
-      "description": "Automatically merge submodule updates",
+      "description": "Automatically group and merge submodule updates",
+      "groupName": "git submodules",
       "matchDatasources": ["git-refs"],
+      "ignoreTests": true,
       "automerge": true
-    }
+    },
   ],
   "vulnerabilityAlerts": {
     "enabled": true
